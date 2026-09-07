@@ -29,7 +29,7 @@ jobs:
           gradle-version: '8.10'
 
       - name: Build APK
-        run: gradle assembleDebug
+        run: run: gradle :app:assembleDebug
 
       - name: Find APK
         run: find . -name "*.apk" -type f
